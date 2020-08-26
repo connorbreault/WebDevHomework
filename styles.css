@@ -47,63 +47,64 @@ body {
 
 /* UNDER 545px */
 @media only screen and ( max-width: 544px ) {
-.textDiv{
-    font-style: normal;
-    width: 215px;
-    height: 110px;
-    margin: 358px auto auto auto;
-}
-
-#yourCityIs{
-    position: absolute;
-    text-align: center;
-    width: 121px;
-    height: 33px;
-    left: 126px;
-    top: 358px;
-    font-size: 24px;
-    line-height: 33px;
-}
-
-#city{
-    position: absolute;
-    width: 215px;
-    height: 49px;
-    left: 80px;
-    top: 405px;
-    font-size: 36px;
-    line-height: 49px;
-}
-
-#privacyLink{
-    left: 142px;
-    top: 768px;
-}
-}
-/* OVER 545px */
-@media only screen and ( min-width: 545px ) {
     .textDiv{
-    position: absolute;
-    width: 430px;
-    height: 217px;
-    left: 505px;
+        font-style: normal;
+        width: 215px;
+        height: 110px;
+        margin: 358px auto auto auto;
     }
-    
+
     #yourCityIs{
-    font-size: 64px;
-    line-height: 87px;
-    margin: 411px auto 0px auto
+        position: absolute;
+        text-align: center;
+        width: 121px;
+        height: 33px;
+        left: 126px;
+        top: 358px;
+        font-size: 24px;
+        line-height: 33px;
     }
-    
+
     #city{
-    font-style: normal;
-    font-size: 72px;
-    line-height: 98px;
-    margin: 0px auto
+        position: absolute;
+        width: 215px;
+        height: 49px;
+        left: 80px;
+        top: 405px;
+        font-size: 36px;
+        line-height: 49px;
     }
 
     #privacyLink{
-    left: 684px;
-    top: 973px;
+        left: 142px;
+        top: 768px;
+    }
+}
+
+/* OVER 545px */
+@media only screen and ( min-width: 545px ) {
+    .textDiv{
+        position: absolute;
+        width: 430px;
+        height: 217px;
+        left: 505px;
+    }
+    
+    #yourCityIs{
+        font-size: 64px;
+        line-height: 87px;
+        margin: 411px auto 0px auto
+    }
+    
+    #city{
+        font-style: normal;
+        font-size: 72px;
+        line-height: 98px;
+        margin: 0px auto
+    }
+
+    #privacyLink{
+        left: 684px;
+        top: 973px;
     }
 }
