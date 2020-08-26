@@ -1,30 +1,24 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Web Dev Homework</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
+{% include header.html %}
 
 <body>
-    <div>
-        <div>
-            <h1>Your city is</h1>
+    <div class="textDiv">
+        <h2 id="yourCityIs">Your city is</h2>
+        <span class="hidden" id="citySpan">
+            <h1 id="city"></h1>
+        </span>
+    </div>
 
-            <span id="city"></span>
-            <br>
-            <a href="/WebDevHomework/privacy">Privacy Policy</a>
-        </div>
-        <script>
-            $.ajax({
-                url: "https://geolocation-db.com/jsonp",
-                jsonpCallback: "callback",
-                dataType: "jsonp",
-                success: function (location) {
-                    $('#city').html(location.city);
-                }
-            });		
-        </script>
+    <a href="/WebDevHomework/privacy" id="privacyLink">Privacy policy</a>
+
+    <script>
+        $.ajax({
+            url: "https://geolocation-db.com/jsonp",
+            jsonpCallback: "callback",
+            dataType: "jsonp",
+            success: function (location) {
+                $("#citySpan").removeClass("hidden")
+                $('#city').html(location.city);
+            }
+        });		
+    </script>
 </body>
-
-</html>
