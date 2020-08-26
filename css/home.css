@@ -13,11 +13,11 @@ body {
 #textDiv {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-style: normal;
 }
 
 #yourCityIs{
-    font-style: normal;
     font-weight: normal;
 }
 
@@ -32,7 +32,6 @@ body {
     width: 90px;
     height: 18px;
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
@@ -47,7 +46,6 @@ body {
 /* UNDER 545px */
 @media only screen and ( max-width: 544px ) {
     #textDiv{
-        font-style: normal;
         width: 215px;
         height: 110px;
         margin: 358px auto auto auto;
@@ -63,17 +61,15 @@ body {
         font-size: 24px;
         line-height: 33px;
     }
-    h1{
+
+    #cityAJAX{
         position: absolute;
         width: 215px;
         height: 49px;
         left: 80px;
         top: 405px;
-        font-style: normal;
-        font-weight: bold;
         font-size: 36px;
         line-height: 49px;
-        align-items: flex-end;
     }
 
     #privacyLink{
@@ -97,14 +93,9 @@ body {
         line-height: 87px;
         margin: 411px auto 0px auto
     }
-    h1{
+    
+    #cityAJAX{
         font-style: normal;
-        font-weight: bold;
-        font-size: 72px;
-        line-height: 98px;
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
         font-size: 72px;
         line-height: 98px;
         margin: 0px auto
