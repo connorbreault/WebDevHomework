@@ -1,10 +1,10 @@
 {% include header.html %}
 
 <body>
-    <div class="textDiv">
+    <div id="textDiv">
         <h2 id="yourCityIs">Your city is</h2>
         <span class="hidden" id="citySpan">
-            <h1 id="city"></h1>
+            <h1 id="cityAJAX"></h1>
         </span>
     </div>
 
@@ -17,7 +17,7 @@
             dataType: "jsonp",
             success: function (location) {
                 $("#citySpan").removeClass("hidden")
-                $('#city').html(location.city);
+                $('#cityAJAX').html(location.city);
             }
         });		
     </script>
