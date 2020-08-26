@@ -1,3 +1,4 @@
+/* RESPONSIVE PROPERTIES */
 body {
     background: linear-gradient(180deg, #3F3CF3 0%, rgba(255, 255, 255, 0) 100%), #1F90C0;
     height: 100%;
@@ -10,40 +11,19 @@ body {
     display: none
 }
 
-/* OVER 545px */
-@media only screen and ( max-width: 544px ) {
-.textDiv{
+.textDiv {
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
     text-align: center;
-    color: #FFFFFF;
-    width: 215px;
-    height: 110px;
-    margin: 358px auto auto auto;
+    color: #FFFFFF
 }
 
 #yourCityIs{
-    position: absolute;
-    width: 121px;
-    height: 33px;
-    left: 126px;
-    top: 358px;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
 }
 
 #city{
-    position: absolute;
-    width: 215px;
-    height: 49px;
-    left: 80px;
-    top: 405px;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
     border-bottom: 6px solid currentColor;
     display: inline-block;
 }
@@ -52,8 +32,6 @@ body {
     position: absolute;
     width: 90px;
     height: 18px;
-    left: 142px;
-    top: 768px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -64,6 +42,42 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none
+}
+
+
+/* UNDER 545px */
+@media only screen and ( max-width: 544px ) {
+.textDiv{
+    font-style: normal;
+    width: 215px;
+    height: 110px;
+    margin: 358px auto auto auto;
+}
+
+#yourCityIs{
+    position: absolute;
+    text-align: center;
+    width: 121px;
+    height: 33px;
+    left: 126px;
+    top: 358px;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+#city{
+    position: absolute;
+    width: 215px;
+    height: 49px;
+    left: 80px;
+    top: 405px;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+#privacyLink{
+    left: 142px;
+    top: 768px;
 }
 }
 /* OVER 545px */
@@ -73,14 +87,9 @@ body {
     width: 430px;
     height: 217px;
     left: 505px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: #FFFFFF
     }
     
     #yourCityIs{
-    font-style: normal;
-    font-weight: normal;
     font-size: 64px;
     line-height: 87px;
     margin: 411px auto 0px auto
@@ -88,31 +97,13 @@ body {
     
     #city{
     font-style: normal;
-    font-weight: bold;
     font-size: 72px;
     line-height: 98px;
     margin: 0px auto
     }
 
     #privacyLink{
-        position: absolute;
-    width: 90px;
-    height: 18px;
     left: 684px;
     top: 973px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none
-    }
-
-    #city{
-    border-bottom: 6px solid currentColor;
-    display: inline-block;
     }
 }
