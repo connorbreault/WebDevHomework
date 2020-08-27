@@ -1,9 +1,6 @@
 /* RESPONSIVE PROPERTIES */
 body {
     background: linear-gradient(180deg, #3F3CF3 0%, rgba(255, 255, 255, 0) 100%), #1F90C0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .hidden{
@@ -86,6 +83,11 @@ body {
 
 /* OVER 545px */
 @media only screen and ( min-width: 545px ) {
+    body{
+        position: relative;
+    width: 1440px;
+    height: 1024px;
+    }
     #textDiv{
         position: absolute;
         width: 430px;
