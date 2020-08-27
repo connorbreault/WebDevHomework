@@ -1,14 +1,18 @@
 {% include header.html %}
 
 <body>
-    <div id="textDiv">
-        <h2 id="yourCityIs" class="fade-in-slow">Your city is</h2>
-        <span class="hidden" id="citySpan">
-            <h1 id="cityAJAX" class="m12"></h1>
-        </span>
-    </div>
+    <div class="container">
+        <div id="textDiv">
+            <h2 id="yourCityIs" class="fade-in-slow">Your city is</h2>
+            <span class="hidden" id="citySpan">
+                <h1 id="cityAJAX" class="m12"></h1>
+            </span>
+        </div>
 
-    <a href="/WebDevHomework/privacy" id="privacyLink" class="fade-in-slow">Privacy policy</a>
+        <div class="footer">
+            <a href="/WebDevHomework/privacy" id="privacyLink" class="fade-in-slow">Privacy policy</a>
+        </div>
+    </div>
 
     <script>
         $.ajax({
@@ -25,7 +29,6 @@
         function animate() {
             var textWrapper = document.querySelector('.m12');
             textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
             anime.timeline({ loop: true })
                 .add({
                     targets: '.m12 .letter',
