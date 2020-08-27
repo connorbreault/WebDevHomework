@@ -2,13 +2,13 @@
 
 <body>
     <div id="textDiv">
-        <h2 id="yourCityIs">Your city is</h2>
+        <h2 id="yourCityIs" class="fade-in-slow">Your city is</h2>
         <span class="hidden" id="citySpan">
-            <h1 id="cityAJAX"></h1>
+            <h1 id="cityAJAX" class="m12"></h1>
         </span>
     </div>
 
-    <a href="/WebDevHomework/privacy" id="privacyLink">Privacy policy</a>
+    <a href="/WebDevHomework/privacy" id="privacyLink" class="fade-in-slow">Privacy policy</a>
 
     <script>
         $.ajax({
@@ -16,9 +16,32 @@
             jsonpCallback: "callback",
             dataType: "jsonp",
             success: function (location) {
-                $("#citySpan").removeClass("hidden")
                 $('#cityAJAX').html(location.city);
+                $("#citySpan").addClass("fade-in-fast")
+                $("#citySpan").removeClass("hidden");
+                animate()
             }
-        });		
+        });
+        function animate() {
+            var textWrapper = document.querySelector('.m12');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({ loop: true })
+                .add({
+                    targets: '.m12 .letter',
+                    scale: [4, 1],
+                    opacity: [0, 1],
+                    translateZ: 0,
+                    easing: "easeOutExpo",
+                    duration: 2500,
+                    delay: (el, i) => 70 * i
+                }).add({
+                    targets: '.m12',
+                    opacity: 0,
+                    duration: 2500,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+        }
     </script>
 </body>

@@ -10,6 +10,11 @@ body {
     display: none
 }
 
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
 #textDiv {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
