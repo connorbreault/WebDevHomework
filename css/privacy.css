@@ -1,80 +1,32 @@
 #privacyContent{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    color: #FFFFFF
+    color: #FFFFFF;
+    margin: 32px 24px auto 24px
 }
 
 #privacyTitle{
-    position: absolute;
     font-weight: bold;
     display: flex;
     align-items: flex-end;
-    margin: 0px
+    font-size: 36px;
+    line-height: 49px;
+    margin: 32px auto
 }
 
 #privacyText{
-    position: absolute;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    margin: 0px auto
 }
 
-#homeLink{
-    position: absolute;
-    width: 39px;
-    height: 18px;
-    font-size: 13px;
-    line-height: 18px;
-    align-items: center;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-/* UNDER 545px */
-@media only screen and ( max-width: 544px ) {
-    #privacyTitle{
-        width: 247px;
-        height: 49px;
-        left: 24px;
-        top: 32px;
-        font-size: 36px;
-        line-height: 49px;
-    } 
-    #privacyText{
-        width: 327px;
-        height: 70px;
-        left: 24px;
-        top: 113px;
-    }
-    #homeLink{
-        left: 168px;
-        top: 768px;
-    }
-}
 /* OVER 545px */
 @media only screen and ( min-width: 545px ) {
     #privacyTitle{
-        width: 494px;
         height: 82px;
-        left: 32px;
-        top: 32px;
+        text-align: center;
         font-size: 72px;
         line-height: 98px;
-        text-align: center;
-    }
-    #privacyText{
-        width: 910px;
-        height: 22px;
-        left: 32px;
-        top: 146px;
-        margin: 0px;
-    }
-    #homeLink{
-        left: 710px;
-        top: 973px;
-        margin-bottom: 33px;
     }
 }
