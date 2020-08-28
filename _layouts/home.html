@@ -21,8 +21,8 @@
             dataType: "jsonp",
             success: function (location) {
                 $('#cityAJAX').html(location.city);
-                $("#citySpan").addClass("fade-in-fast")
                 $("#citySpan").removeClass("hidden");
+                $("#citySpan").addClass("fade-in-fast")
                 animate()
             }
         });
